@@ -1,0 +1,339 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Текст в <p> на главной старнице */
+.lg-text {
+  font-size: 25px;
+  text-align: center;
+}
+
+/* Фон главной страницы */
+.background {
+  width: 100%;
+  height: 100vh;
+  background-color: #484849;
+  background-image: url(images2/e34m5.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: fixed;
+  z-index: -1;
+}
+
+/* Главная страница */
+.bg-overlay {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  opacity: 0.35;
+}
+
+/* нав меню */
+li {
+  list-style: none;
+  padding: 5px;
+}
+
+h1 {
+  margin: 0;
+  padding-top: 1em;
+  text-align: center;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: min(100% - 40px, 992px);
+  margin-inline: auto;
+}
+
+.articles_center {
+  text-align: center;
+
+}
+
+.navbar-list {
+  margin: 0;
+  padding-top: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.navbar-link {
+  display: block;
+  color: inherit;
+  background-color: #7ba6f2;
+  padding: 15px 20px;
+  border-radius: 7px;
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
+}
+
+.navbar-link:hover {
+  background-color: tomato;
+  transform: scale(1.1) translateY(-5px);
+}
+
+.header {
+  background-color: #3d3d3d;
+  padding-top: 10px;
+  padding-bottom: 0;
+  color: white;
+}
+
+/* Для главной страницы main */
+.main {
+  min-height: calc(100vh - 170px);
+}
+
+/* фон для articles */
+.bg-articles {
+  background-color: #242323;
+  background-image: url(images2/bg-articles-1.jpg);
+  background-position: center;
+
+
+}
+
+/* main для страницы Articles */
+.main_for_articles {
+  background-color: rgb(41, 40, 40);
+  /*центральная часть */
+  background-image: url(images2/img_wheels.jpg);
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: calc(100vh - 130px);
+  padding: 20px;
+}
+
+.container_articles_main {
+  text-align: center;
+  padding: 30px;
+  margin: 10px;
+  background-color: rgb(255, 255, 255);
+  /* Фон для статей */
+  border-radius: 10px;
+}
+
+
+.footer {
+  background-color: gray;
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+/* Контейнер для заглавий статей */
+.container_articles_a {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  color: #ff5722;
+  text-decoration: none;
+  border-bottom: 2px solid #000000;
+}
+
+/* Контейнер для параграфов статей на странице Articles*/
+.container_articles_p {
+  background-color: #a7965f;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Контейнер для ссылки читать далее... */
+.container_articles_readmore {
+  color: #4036c2;
+  text-decoration: underline;
+}
+
+.container_articles_readmore:hover {
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+/* Контейнер для комментариев */
+.container_articles_comments {
+  color: #737275;
+  text-decoration: underline;
+  padding-bottom: 10px;
+}
+
+.container_articles_comments:hover {
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+/* Для каталога */
+.bg-catalog {
+  background-image: url(images2/texture_blackl.jpg);
+
+}
+
+.style_for_ulcatalog {
+  list-style: none;
+  background-color: #fffffffb;
+  padding: 20px;
+  width: 400px;
+  margin: 0% auto;
+  border-radius: 10px;
+}
+
+/* Стиль для категорий */
+.style_for_p {
+  font-size: 30px;
+  margin-bottom: 10px;
+  background-image: url(images2/images_for_catalog/Shopping-cart-in@3x.png);
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 40px;
+}
+
+/* Стиль для подкатегорий */
+.style_for_ol {
+  list-style: none;
+  background-color: #fff8dc;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+/* Подкатегории — шрифт и маркер */
+.style_for_ulcatalog_li {
+  font-size: 18px;
+  margin-bottom: 8px;
+  background-image: url(images2/images_for_catalog/Tag-1@2x.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 30px;
+  background-size: 20px;
+}
+
+
+.style_for_new {
+  background-color: #ff6347;
+  color: white;
+  font-size: 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 2px 6px;
+  margin-left: 10px;
+} 
+
+/* бекграунд для Contacts */
+.bg-contacts {
+  background-color: #737275;
+  background-image: url(images2/texture_blackl.jpg);
+  background-position: center;
+
+
+}
+
+/*бэкграунд для Gallery*/
+/* .background_gallery {
+  background-image: url(images2/texture_metal.jpg);
+  background-repeat: repeat;
+  padding: 15px;
+} */
+
+
+
+.container-gallery {
+  display: flex;
+  justify-content: center;
+
+}
+
+/* Рамка */
+.figure_style {
+  text-align: center;
+  max-width: 400px;
+  border: 5px solid #4CAF50;
+  transition: border 0.3s ease-in-out;
+}
+
+/* Рамка */
+.figure_style:hover {
+  border: none;
+}
+
+/* текст в ссылках */
+.style_title_img {
+  font-size: 25px;
+  color: #f0f8ff;
+}
+
+.style_title_img:hover {
+  color: #e74c3c;
+}
+
+/* Форма для регистрации и др формы */
+* {
+  box-sizing: border-box;
+}
+
+fieldset {
+  max-width: 500px;
+  margin: 25px auto;
+  background-color: lightsteelblue;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+input[type="file"] {
+  padding: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px 20px;
+  resize: vertical;
+  min-height: 75px;
+  max-height: 33vh;
+}
+
+legend {
+  transform: translateY(-10px);
+}
+
+.form-group:not(:first-of-type) {
+  margin: 15px 0 5px;
+}
+
+.form-group-sm {
+  margin: 10px 0 5px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 20px;
+
+}
+
+.text_transform {
+  text-transform: capitalize;
+}

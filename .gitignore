@@ -1,0 +1,8 @@
+#folders
+.idea/
+.vscode/
+node_modules/
+
+#files
+.DS_Store
+

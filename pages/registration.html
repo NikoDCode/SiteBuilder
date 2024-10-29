@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+
+
+  <main class="main">
+
+    <div>
+
+      <header class="header">
+        <h1>Registration</h1>
+        <div class="container">
+
+          <nav class="navbar">
+
+            <ol class="navbar-list">
+
+              <li class="navbar-item">
+                <a href="../index.html" class="navbar-link">Home</a>
+              </li>
+              <li class="navbar-item">
+                <a href="articles.html" class="navbar-link">Articles</a>
+              </li>
+              <li class="navbar-item">
+                <a href="catalog.html" class="navbar-link">Catalog</a>
+              </li>
+              <li class="navbar-item">
+                <a href="contacts.html" class="navbar-link">Contacts</a>
+              </li>
+              <li class="navbar-item">
+                <a href="gallery.html" class="navbar-link">Gallery</a>
+              </li>
+              <li class="navbar-item">
+                <a href="page-nav.html" class="navbar-link">Navigation</a>
+              </li>
+              <li class="navbar-item">
+                <a href="registration.html" class="navbar-link">Registration</a>
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </header>
+  </main>
+
+
+
+
+  <form action="https://tests.fomenko.top/echo/index.php" method="POST">
+
+    <fieldset>
+      <legend>Fill in to Register</legend>
+
+      <div class="form-group">
+        <label for="login">Login</label>
+        <input type="text" id="login" name="login" placeholder="Login" class="text_transform">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="passwor" id="password" placeholder="Password">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Photo</legend>
+      <div class="form-group">
+        <label for="file">Download</label>
+        <input id="file" name="file" type="file">
+      </div>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>About myself</legend>
+
+      <div class="form-group">
+        <label for="about_myself">Something about yourself</label>
+        <textarea name="about_myself" id="about_myself" placeholder="About myself" class="text_transform"></textarea>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Date of Birth</legend>
+
+      <div class="form-group">
+        <label for="date">Select Date of Birth</label>
+        <input type="date" name="data" id="date">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>What cuisine do you like?</legend>
+
+      <div class="form-group-sm">
+        <input id="ua" name="kit-ua" type="checkbox" value="ua">
+        <label for="ua">Ukrainian</label>
+      </div>
+
+      <div class="form-group-sm">
+        <input id="it" name="kit-it" type="checkbox" value="it">
+        <label for="it">Italian</label>
+      </div>
+
+      <div class="form-group-sm">
+        <input id="gr" name="kit-gr" type="checkbox" value="gr">
+        <label for="gr">Georgian</label>
+      </div>
+
+      <div class="form-group-sm">
+        <input id="jp" name="kit-jp" type="checkbox" value="jp">
+        <label for="jp">Japanese</label>
+      </div>
+
+    </fieldset>
+
+    <!-- <fieldset>
+      <legend>Gender</legend>
+
+      <div>
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+          <option selected disabled value="">Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+    </fieldset> -->
+
+    <fieldset>
+      <legend>Choose Gender</legend>
+
+      <div class="form-group-sm">
+        <input id="male" name="gender" type="radio" value="male">
+        <label for="male">Male</label>
+      </div>
+
+      <div class="form-group-sm">
+        <input id="female" name="gender" type="radio" value="female">
+        <label for="female">Female</label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Hobi</legend>
+
+      <div>
+        <label for="hobi">Selecte your Hobi</label>
+        <select name="hobi[]" id="hobi" multiple>
+          <option selected disabled value="">Selecte your Hobi</option>
+          <option value="Video Games">Video Games</option>
+          <option value="Sport">Sport</option>
+          <option value="Reading Books">Reading Books</option>
+          <option value="Singing">Singing</option>
+          <option value="Drawing">Drawing</option>
+          <option value="Dancing">Dancing</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Form Actions</legend>
+
+      <div class="form-group">
+        <button type="submit" name="name" class="btn">Confirm</button>
+      </div>
+      <div class="form-group">
+        <button type="reset" name="reset" class="btn">Reset</button>
+      </div>
+
+    </fieldset>
+  </form>
+
+  <footer>&copy;Nikolay Dikusar</footer>
+
+</body>
+
+</html>
