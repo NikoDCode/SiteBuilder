@@ -233,7 +233,7 @@ a {
   font-weight: bold;
   padding: 2px 6px;
   margin-left: 10px;
-} 
+}
 
 /* бекграунд для Contacts */
 .bg-contacts {
@@ -245,11 +245,10 @@ a {
 }
 
 /*бэкграунд для Gallery*/
-/* .background_gallery {
+.background_gallery {
   background-image: url(images2/texture_metal.jpg);
-  background-repeat: repeat;
-  padding: 15px;
-} */
+
+}
 
 
 
