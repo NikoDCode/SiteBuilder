@@ -240,8 +240,6 @@ a {
   background-color: #737275;
   background-image: url(images2/texture_blackl.jpg);
   background-position: center;
-
-
 }
 
 /*бэкграунд для Gallery*/
@@ -250,12 +248,9 @@ a {
 
 }
 
-
-
 .container-gallery {
   display: flex;
   justify-content: center;
-
 }
 
 /* Рамка */
