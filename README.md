@@ -9,3 +9,5 @@
 -git branch
 -git log
 -git checkout
+-git push
+-git clone
