@@ -10,124 +10,123 @@
 
 <body>
 
+  <div class="background-main"></div>
 
 
-  <main class="main">
+  <header class="header">
 
-    <div>
+    <nav class="navbar">
 
-      <header class="header">
-        <h1>Registration</h1>
-        <div class="container">
+      <ol class="navbar-list">
 
-          <nav class="navbar">
-
-            <ol class="navbar-list">
-
-              <li class="navbar-item">
-                <a href="../index.html" class="navbar-link">Home</a>
-              </li>
-              <li class="navbar-item">
-                <a href="articles.html" class="navbar-link">Articles</a>
-              </li>
-              <li class="navbar-item">
-                <a href="catalog.html" class="navbar-link">Catalog</a>
-              </li>
-              <li class="navbar-item">
-                <a href="contacts.html" class="navbar-link">Contacts</a>
-              </li>
-              <li class="navbar-item">
-                <a href="gallery.html" class="navbar-link">Gallery</a>
-              </li>
-              <li class="navbar-item">
-                <a href="page-nav.html" class="navbar-link">Navigation</a>
-              </li>
-              <li class="navbar-item">
-                <a href="registration.html" class="navbar-link">Registration</a>
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </header>
+        <li class="navbar-item">
+          <a href="../index.html" class="navbar-link">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a href="articles.html" class="navbar-link">Articles</a>
+        </li>
+        <li class="navbar-item">
+          <a href="catalog.html" class="navbar-link">Catalog</a>
+        </li>
+        <li class="navbar-item">
+          <a href="contacts.html" class="navbar-link">Contacts</a>
+        </li>
+        <li class="navbar-item">
+          <a href="gallery.html" class="navbar-link">Gallery</a>
+        </li>
+        <li class="navbar-item">
+          <a href="page-nav.html" class="navbar-link">Navigation</a>
+        </li>
+        <li class="navbar-item">
+          <a href="registration.html" class="navbar-link">Registration</a>
+        </li>
+      </ol>
+    </nav>
+    </div>
+  </header>
   </main>
 
+  <main class="main">
+    <div class="container">
+      <div class="bg-center"></div>
 
+      <h1>Registration</h1>
 
+      <form action="https://tests.fomenko.top/echo/index.php" method="POST">
 
-  <form action="https://tests.fomenko.top/echo/index.php" method="POST">
+        <fieldset>
+          <legend>Fill in to Register</legend>
 
-    <fieldset>
-      <legend>Fill in to Register</legend>
+          <div class="form-group">
+            <label class="form-label" for="login">Login</label>
+            <input type="text" id="login" name="login" placeholder="Login" class="text_transform">
+          </div>
 
-      <div class="form-group">
-        <label for="login">Login</label>
-        <input type="text" id="login" name="login" placeholder="Login" class="text_transform">
-      </div>
+          <div class="form-group">
+            <label class="form-label" for="password">Password</label>
+            <input type="password" name="passwor" id="password" placeholder="Password">
+          </div>
 
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" name="passwor" id="password" placeholder="Password">
-      </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email">
+          </div>
+        </fieldset>
 
-      <div class="form-group">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Email">
-      </div>
-    </fieldset>
+        <fieldset>
+          <legend>Photo</legend>
+          <div class="form-group">
+            <label class="form-label" for="file">Download</label>
+            <input id="file" name="file" type="file">
+          </div>
 
-    <fieldset>
-      <legend>Photo</legend>
-      <div class="form-group">
-        <label for="file">Download</label>
-        <input id="file" name="file" type="file">
-      </div>
+        </fieldset>
 
-    </fieldset>
+        <fieldset>
+          <legend>About myself</legend>
 
-    <fieldset>
-      <legend>About myself</legend>
+          <div class="form-group">
+            <label class="form-label" for="about_myself">Something about yourself</label>
+            <textarea name="about_myself" id="about_myself" placeholder="About myself"
+              class="text_transform"></textarea>
+          </div>
+        </fieldset>
 
-      <div class="form-group">
-        <label for="about_myself">Something about yourself</label>
-        <textarea name="about_myself" id="about_myself" placeholder="About myself" class="text_transform"></textarea>
-      </div>
-    </fieldset>
+        <fieldset>
+          <legend>Date of Birth</legend>
 
-    <fieldset>
-      <legend>Date of Birth</legend>
+          <div class="form-group">
+            <label class="form-label" for="date">Select Date of Birth</label>
+            <input type="date" name="data" id="date">
+          </div>
+        </fieldset>
 
-      <div class="form-group">
-        <label for="date">Select Date of Birth</label>
-        <input type="date" name="data" id="date">
-      </div>
-    </fieldset>
+        <fieldset>
+          <legend>What brands of cars do you like?</legend>
 
-    <fieldset>
-      <legend>What cuisine do you like?</legend>
+          <div class="form-group-sm">
+            <input id="ua" name="kit-ua" type="checkbox" value="ua">
+            <label for="ua">BMW</label>
+          </div>
 
-      <div class="form-group-sm">
-        <input id="ua" name="kit-ua" type="checkbox" value="ua">
-        <label for="ua">Ukrainian</label>
-      </div>
+          <div class="form-group-sm">
+            <input id="it" name="kit-it" type="checkbox" value="it">
+            <label for="it">Audi</label>
+          </div>
 
-      <div class="form-group-sm">
-        <input id="it" name="kit-it" type="checkbox" value="it">
-        <label for="it">Italian</label>
-      </div>
+          <div class="form-group-sm">
+            <input id="gr" name="kit-gr" type="checkbox" value="gr">
+            <label for="gr">Mercedes-Benz</label>
+          </div>
 
-      <div class="form-group-sm">
-        <input id="gr" name="kit-gr" type="checkbox" value="gr">
-        <label for="gr">Georgian</label>
-      </div>
+          <div class="form-group-sm">
+            <input id="jp" name="kit-jp" type="checkbox" value="jp">
+            <label for="jp">Porsche</label>
+          </div>
 
-      <div class="form-group-sm">
-        <input id="jp" name="kit-jp" type="checkbox" value="jp">
-        <label for="jp">Japanese</label>
-      </div>
+        </fieldset>
 
-    </fieldset>
-
-    <!-- <fieldset>
+        <!-- <fieldset>
       <legend>Gender</legend>
 
       <div>
@@ -140,51 +139,57 @@
       </div>
     </fieldset> -->
 
-    <fieldset>
-      <legend>Choose Gender</legend>
+        <fieldset>
+          <legend>Choose Gender</legend>
 
-      <div class="form-group-sm">
-        <input id="male" name="gender" type="radio" value="male">
-        <label for="male">Male</label>
-      </div>
+          <div class="form-group-sm">
+            <input id="male" name="gender" type="radio" value="male">
+            <label for="male">Male</label>
+          </div>
 
-      <div class="form-group-sm">
-        <input id="female" name="gender" type="radio" value="female">
-        <label for="female">Female</label>
-      </div>
-    </fieldset>
+          <div class="form-group-sm">
+            <input id="female" name="gender" type="radio" value="female">
+            <label for="female">Female</label>
+          </div>
+        </fieldset>
 
-    <fieldset>
-      <legend>Hobi</legend>
+        <fieldset>
+          <legend>Hobi</legend>
 
-      <div>
-        <label for="hobi">Selecte your Hobi</label>
-        <select name="hobi[]" id="hobi" multiple>
-          <option selected disabled value="">Selecte your Hobi</option>
-          <option value="Video Games">Video Games</option>
-          <option value="Sport">Sport</option>
-          <option value="Reading Books">Reading Books</option>
-          <option value="Singing">Singing</option>
-          <option value="Drawing">Drawing</option>
-          <option value="Dancing">Dancing</option>
-        </select>
-      </div>
-    </fieldset>
+          <div>
+            <label for="hobi">Selecte your Hobi</label>
+            <select name="hobi[]" id="hobi" multiple>
+              <option selected disabled value="">Selecte your Hobi</option>
+              <option value="Video Games">Video Games</option>
+              <option value="Sport">Sport</option>
+              <option value="Reading Books">Reading Books</option>
+              <option value="Singing">Singing</option>
+              <option value="Drawing">Drawing</option>
+              <option value="Dancing">Dancing</option>
+            </select>
+          </div>
+        </fieldset>
 
-    <fieldset>
-      <legend>Form Actions</legend>
+        <fieldset>
+          <legend>Form Actions</legend>
 
-      <div class="form-group">
-        <button type="submit" name="name" class="btn">Confirm</button>
-      </div>
-      <div class="form-group">
-        <button type="reset" name="reset" class="btn">Reset</button>
-      </div>
+          <div class="form-group">
+            <button type="submit" name="name" class="btn">Confirm</button>
+          </div>
+          <div class="form-group">
+            <button type="reset" name="reset" class="btn">Reset</button>
+          </div>
 
-    </fieldset>
-  </form>
+        </fieldset>
+      </form>
 
-  <footer>&copy;Nikolay Dikusar</footer>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      &copy;Nikolay Dikusar
+  </footer>
+  </div>
 
 </body>
 
