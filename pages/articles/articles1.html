@@ -9,42 +9,43 @@
 </head>
 
 <body>
+  <div class="background-main"></div>
   <header class="header">
 
-    <div class="container">
-
-      <nav class="navbar">
-        <ol class="navbar-list">
-          <li class="navbar-item">
-            <a href="../../index.html" class="navbar-link">Home</a>
-          </li>
-          <li class="navbar-item">
-            <a href="../articles.html" class="navbar-link">Articles</a>
-          </li>
-          <li class="navbar-item">
-            <a href="../catalog.html" class="navbar-link">Catalog</a>
-          </li>
-          <li class="navbar-item">
-            <a href="../catalog.html" class="navbar-link">Contacts</a>
-          </li>
-          <li class="navbar-item">
-            <a href="../gallery.html" class="navbar-link">Gallery</a>
-          </li>
-          <li class="navbar-item">
-            <a href="../page-nav.html" class="navbar-link">Navigation</a>
-          </li>
-          <li class="navbar-item">
-            <a href="../registration.html" class="navbar-link">Registration</a>
-          </li>
-        </ol>
-      </nav>
-    </div>
+    <nav class="navbar">
+      <ol class="navbar-list">
+        <li class="navbar-item">
+          <a href="../../index.html" class="navbar-link">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a href="../articles.html" class="navbar-link">Articles</a>
+        </li>
+        <li class="navbar-item">
+          <a href="../catalog.html" class="navbar-link">Catalog</a>
+        </li>
+        <li class="navbar-item">
+          <a href="../catalog.html" class="navbar-link">Contacts</a>
+        </li>
+        <li class="navbar-item">
+          <a href="../gallery.html" class="navbar-link">Gallery</a>
+        </li>
+        <li class="navbar-item">
+          <a href="../page-nav.html" class="navbar-link">Navigation</a>
+        </li>
+        <li class="navbar-item">
+          <a href="../registration.html" class="navbar-link">Registration</a>
+        </li>
+      </ol>
+    </nav>
   </header>
 
   <main class="main">
-    <h1>BMW 5 Series (E34)</h1>
 
     <div class="container">
+      <div class="bg-center"></div>
+
+      <h1>BMW 5 Series (E34)</h1>
+
       <div class="articles_center">
         <h2>Petrol-engined</h2>
         <p>The base model, available only in Europe, was the petrol-powered four-cylinder 518i. Only available with a
@@ -115,31 +116,31 @@
         <p>In its last year of production for the M5, the transmission was upgraded from a 5-speed manual to the Getrag
           420G
           6-speed manual (which was also used by the 540i model).</p>
-        <a href="../articles.html">Back to all articles</a>
+
+        <a href="../articles.html" class="nav-link-style">Back to all articles</a>
       </div>
-    </div>
 
+      <form action="url-handler" method="get">
+        <fieldset>
+          <legend>Comments</legend>
 
-    <form action="url-handler" method="get" class="container">
-      <fieldset>
-        <legend>Comments</legend>
+          <div>
+            <label for="message">Your comment:</label>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Comments"></textarea>
+          </div>
 
-        <div>
-          <label for="message">Your comment:</label>
-          <textarea id="message" name="message" rows="4" cols="50" placeholder="Comments"></textarea>
-        </div>
+          <div>
+            <label for="submit">Send</label>
+            <input id="submit" type="submit" value="Send">
+          </div>
+        </fieldset>
 
-        <div>
-          <label for="submit">Send</label>
-          <input id="submit" type="submit" value="Send">
-        </div>
-      </fieldset>
-
-    </form>
+      </form>
   </main>
+  </div>
 
   <footer class="footer">
-    <div class="container">
+    <div>
       &copy;Nikolay Dikusar
   </footer>
 

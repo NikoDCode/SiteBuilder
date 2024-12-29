@@ -57,6 +57,8 @@ a {
   width: min(100% - 40px, 992px);
   margin-inline: auto;
   position: relative;
+  padding-bottom: 32px;
+  min-height: 100vh;
 }
 
 .articles_center {
@@ -95,7 +97,7 @@ a {
 }
 
 .main {
-  min-height: calc(100vh - 180px);
+  min-height: calc(100vh - 170px);
 }
 
 /* Для контента на страницы nav-page*/
@@ -141,6 +143,7 @@ a {
   padding-bottom: 40px;
   font-size: 20px;
   text-align: center;
+  width: 100vw; /* Устанавливаем ширину на весь экран */
 }
 
 /* Контейнер для заглавий статей */
@@ -268,7 +271,7 @@ a {
   align-items: flex-end;
   gap: 20px;
   justify-content: center;
-  margin-bottom: 10px;
+  padding-bottom: 40px;
 }
 
 /* Рамка галлерея*/

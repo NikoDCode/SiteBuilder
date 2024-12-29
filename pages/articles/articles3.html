@@ -9,43 +9,45 @@
 </head>
 
 <body>
+
+  <div class="background-main"></div>
   <header class="header">
 
-    <div class="container">
-
-      <nav class="navbar">
-        <ol class="navbar-list">
-          <li class="navbar-item">
-            <a href="../../index.html" class="navbar-link">Home</a>
-          </li>
-          <li class="navbar-item">
-            <a href="../articles.html" class="navbar-link">Articles</a>
-          </li>
-          <li class="navbar-item">
-            <a href="../catalog.html" class="navbar-link">Catalog</a>
-          </li>
-          <li class="navbar-item">
-            <a href="../catalog.html" class="navbar-link">Contacts</a>
-          </li>
-          <li class="navbar-item">
-            <a href="../gallery.html" class="navbar-link">Gallery</a>
-          </li>
-          <li class="navbar-item">
-            <a href="../page-nav.html" class="navbar-link">Navigation</a>
-          </li>
-          <li class="navbar-item">
-            <a href="../registration.html" class="navbar-link">Registration</a>
-          </li>
-        </ol>
-      </nav>
-    </div>
+    <nav class="navbar">
+      <ol class="navbar-list">
+        <li class="navbar-item">
+          <a href="../../index.html" class="navbar-link">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a href="../articles.html" class="navbar-link">Articles</a>
+        </li>
+        <li class="navbar-item">
+          <a href="../catalog.html" class="navbar-link">Catalog</a>
+        </li>
+        <li class="navbar-item">
+          <a href="../catalog.html" class="navbar-link">Contacts</a>
+        </li>
+        <li class="navbar-item">
+          <a href="../gallery.html" class="navbar-link">Gallery</a>
+        </li>
+        <li class="navbar-item">
+          <a href="../page-nav.html" class="navbar-link">Navigation</a>
+        </li>
+        <li class="navbar-item">
+          <a href="../registration.html" class="navbar-link">Registration</a>
+        </li>
+      </ol>
+    </nav>
   </header>
+
   <main class="main">
-    <h1>BMW 5 Series (E39)</h1>
 
     <div class="container">
+      <div class="bg-center"></div>
       <div class="articles_center">
+        <h1>BMW 5 Series (E39)</h1>
         <h2>Development and launch</h2>
+
         <p>Development for the E34's successor began in 1993,[citation needed] and ended in 1995. The final design by
           Joji
           Nagashima was selected in June 1992 and later frozen for production under new design chief Chris Bangle.
@@ -154,32 +156,31 @@
           3.0 litre twin-turbocharged unit rated at 180 kW (241 hp) and 500 N⋅m (369 lb⋅ft) of torque, was based on the
           engine of the 530d model.</p>
 
-        <a href="../articles.html">Back to all articles</a>
+        <a href="../articles.html" class="nav-link-style">Back to all articles</a>
       </div>
+
+      <form action="url-handler" method="get">
+        <fieldset>
+          <legend>Comments</legend>
+
+          <div>
+            <label for="message">Your comment:</label>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Comments"></textarea>
+          </div>
+
+          <div>
+            <label for="submit">Send</label>
+            <input id="submit" type="submit" value="Send">
+          </div>
+        </fieldset>
     </div>
-
-    <form action="url-handler" method="get" class="container">
-      <fieldset>
-        <legend>Comments</legend>
-
-        <div>
-          <label for="message">Your comment:</label>
-          <textarea id="message" name="message" rows="4" cols="50" placeholder="Comments"></textarea>
-        </div>
-
-        <div>
-          <label for="submit">Send</label>
-          <input id="submit" type="submit" value="Send">
-        </div>
-      </fieldset>
   </main>
+
   <footer class="footer">
-    <div class="container">
+    <div>
       &copy;Nikolay Dikusar
   </footer>
+
 </body>
-
-
-
 
 </html>
